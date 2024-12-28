@@ -25,3 +25,5 @@ class CircleShape(pygame.sprite.Sprite):
         distance = pygame.math.Vector2.distance_to(self.position, other.position)
         return distance <= self.radius + other.radius
     
+circle = CircleShape(1, 1, 1)
+print(type(circle.position.x))
